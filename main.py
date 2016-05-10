@@ -47,7 +47,7 @@ class TwistedClientApp(App):
     def setup_gui(self):
         self.textbox = TextInput(size_hint_y=.1, multiline=False)
         self.textbox.bind(on_text_validate=self.send_message)
-        self.ip = TextInput(size_hint_y=.1, multiline=False, text='192.168.0.103')
+        self.ip = TextInput(size_hint_y=.1, multiline=False, text='192.168.0.101')
         self.ip.bind(on_text_validate=self.connect_to_server)
         self.label = Label(text='enter ip to connect\n')
         self.layout = BoxLayout(orientation='vertical')
